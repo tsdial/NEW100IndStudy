@@ -16,10 +16,37 @@
 <h2>Taylor Dial</h2>
 
 <h4>I spent 20 hours learning HTML, CSS, and JavaScript and made this, my first website.</h4>
-<p>As a part of my website, I have included the reading and other media I used to do this project, as well as my reflection paper. I decided that this would most efficiently use my time and yours. </p>
+<p>As a part of my website, I have included the reading and other media I used to do this project, as well as my reflection paper. I decided this because I thought would most efficiently use my time and yours. </p>
 <br/>
 <img src="traumgarten.jpg">
 <br/>
 <p>This is a painting that I think is really cool. </p>
+<script>
+
+window.onload = function() {
+	window.alert("Welcome to my website!");
+	var x = 0;
+	var n = 3;
+	setInterval(function() {
+		if (x%n == 0)
+			document.getElementsByTagName("h2")[0].style.color = "red";
+		if (x%n == 1)
+			document.getElementsByTagName("h2")[0].style.color = "yellow";
+		if (x%n == 2)
+			document.getElementsByTagName("h2")[0].style.color = "blue";
+		x++;
+	}, 1000);
+}
+/*var number = 0;
+while (number < 100) {
+console.log ();
+	x++;
+	if 15 % x == 0
+		print("FizzBuzz");
+
+	
+} */
+
+</script>
 </body>
 </html>
